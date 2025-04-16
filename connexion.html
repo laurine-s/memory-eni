@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incription</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="formulaire.js"></script>
+    
+</head>
+<body class="gradient">
+    <h1>ENI - <span id="memoryText">MEMORY</span> - Connexion</h1>
+    <nav>
+        <ul id="menu">
+            <ol> <a class="linksMenu" href="accueil.html">Accueil</a> </ol>
+            <ol> <a class="linksMenu" href="inscription.html">S'inscrire</a> </ol>
+            <ol><a class="linksMenu" href="connexion.html">Se connecter</a></ol>
+            <ol><a class="linksMenu" href="profil.html">Profil</a></ol>
+            <ol><a class="linksMenu" href="jouer.html">Jouer</a></ol>
+        </ul>
+    </nav>
+    <div class="containIntroduction" id="containForm">
+        <fieldset>
+            <form action="" method="get">
+                    
+                    <h2 >Connectez-vous</h2>
+                
+                    <div class="fields">
+                        <label for="emailConnexion">Entrez votre email</label>
+                        <input id="emailConnexion" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$" placeholder="Votre email" type="email" title="Saisissez votre email">
+                    </div>
+                    
+                    <div class="fields">
+                        <label for="passwordConnexion">Mot de passe</label>
+                        <input id="passwordConnexion" type="password" placeholder="Votre mot de passe" title="Saisissez votre mot de passe">
+                    </div>
+                                        
+                    <div class="formButtons">
+                        <button class="button" id="validerConnexion" type="submit" >Se connecter</button>
+                        <a class="button" id="annuler" href="accueil.html">Annuler</a>
+                    </div>
+                    
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

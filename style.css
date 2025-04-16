@@ -17,6 +17,7 @@ h1 {
 body {
     background-color: rgb(241, 221, 255);
     margin: 0;
+    min-height: 80%;
 }
 
 nav {
@@ -183,7 +184,17 @@ border: 2px solid rgb(93, 12, 151);
 box-shadow: 10px 5px 5px rgb(133, 22, 212);
 color: rgb(93, 12, 151);
 text-align: center;
-font-size: 22px;
+}
+
+:disabled {
+    background-color: dimgrey;
+}
+
+:disabled:hover{
+    box-shadow: none;
+    background-color: dimgrey;
+    color: #ffffff;
+    border: 4px solid rgb(93, 12, 151);
 }
 
 .error{
@@ -205,4 +216,46 @@ font-size: 22px;
     display: none;
 }
 
+#errorPassword{
+    display: none;
+}
 
+#errorConfirmPassword{
+    display: none; 
+}
+
+.help{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-family: calibri;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+.helpMessage{
+    display: flex;
+    width: 30%;
+}
+
+.helpPassword{
+    width: 100%;
+    text-align: center;
+    border-top: solid;
+}
+
+#weak{
+    border-color: orange;
+    display: none;
+}
+
+#middle{
+    border-color: yellow;
+    display: none;
+}
+
+#strong{
+    border-color: green;
+    display: none;
+}
